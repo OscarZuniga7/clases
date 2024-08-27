@@ -1,5 +1,3 @@
-
-
 def main():
     x = int(input("¿Qué es x? "))
     if es_par(x):

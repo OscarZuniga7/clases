@@ -1,6 +1,5 @@
 def main():
-    num = obtener_numero()
-    miau(num)
+    miau(obtener_numero())
 
 
 def miau(n):
