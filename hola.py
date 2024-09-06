@@ -1,1 +1,4 @@
-print("hola, mundo!")
+def hola(name):
+    return f"Hola, name!"
+
+hola("Oscar")
