@@ -5,7 +5,7 @@ def calcular_vuelto(total_pago, monto_entregado):
         return
     billetes = [1000, 500, 100, 50, 10]
     for billete in billetes:
-        cantidad = vuelto // billete
+        cantidad = int(vuelto / billete)
         vuelto = vuelto - cantidad * billete
         print(f"Billetes de {billete}: {cantidad}")
 

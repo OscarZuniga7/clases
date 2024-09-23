@@ -1,13 +1,13 @@
 def es_primo(n):
     if n < 2:
         return False
-    for i in range(2, n):
+    for i in range(2,n):
         if n % i == 0:
             return False
     return True
 
 # Valor de entrada básico
-numero = 6
+numero = int(input("Ingrese un valor positivo mayor que 1: "))
 es_numero_primo = es_primo(numero)
 print(f"¿El número {numero} es primo? {es_numero_primo}")
 
