@@ -1,4 +1,4 @@
-def hola(name):
-    return f"Hola, {name}!"
-
-print(hola("Oscar"))
+x = 0
+while x < 3:
+    print("Hola Mundo")
+    x = x + 1
