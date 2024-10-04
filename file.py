@@ -1,9 +1,7 @@
-# Almacena nombres en una lista
+# Escribe un nombre en un archivo
 
-names = []  # Inicializa una lista vacía para almacenar nombres
+name = input("¿Cuál es tu nombre? ")  # Solicita al usuario su nombre
 
-for _ in range(3):
-    names.append(input("¿Cuál es tu nombre? "))  # Solicita tres nombres y los añade a la lista
-
-for name in sorted(names):  # Ordena los nombres alfabéticamente
-    print(f"hola, {name}")  # Imprime un saludo personalizado para cada nombre
+file = open("names.txt", "w")  # Abre el archivo 'names.txt' en modo escritura (w), borrando el contenido previo
+file.write(name)  # Escribe el nombre en el archivo
+file.close()  # Cierra el archivo
