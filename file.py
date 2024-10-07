@@ -1,7 +1,10 @@
-# Escribe un nombre en un archivo
+# Ordena una lista de cadenas
+students = []  # Inicializa una lista vacía
 
-name = input("¿Cuál es tu nombre? ")  # Solicita al usuario su nombre
+with open("students0.csv") as file:  # Abre el archivo 'students0.csv'
+    for line in file:
+        name, house = line.rstrip().split(";")  # Separa cada línea en nombre y casa
+        students.append(f"{name} está en {house}")  # Añade una cadena con el formato adecuado a la lista 'students'
 
-file = open("names.txt", "w")  # Abre el archivo 'names.txt' en modo escritura (w), borrando el contenido previo
-file.write(name)  # Escribe el nombre en el archivo
-file.close()  # Cierra el archivo
+for student in sorted(students):  # Ordena alfabéticamente la lista de estudiantes
+    print(student)  # Imprime cada estudiante
